@@ -12,6 +12,7 @@ export default class createAppointments1598486987022
             type: 'varchar',
             isPrimary: true,
             generationStrategy: 'uuid',
+            default: 'uuid_generate_v4()',
           },
           {
             name: 'provider',
@@ -19,7 +20,7 @@ export default class createAppointments1598486987022
             isNullable: false,
           },
           {
-            name: 'type',
+            name: 'date',
             type: 'timestamp with time zone',
             isNullable: false,
           },
